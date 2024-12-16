@@ -8,7 +8,7 @@ def resize_images(input_dir, output_dir, size=(300, 300)):
     # Args:
     #     input_dir (str): Caminho para o diretório com as imagens originais.
     #     output_dir (str): Caminho para o diretório onde as imagens redimensionadas serão salvas.
-    #     size (tuple): Tamanho desejado das imagens (largura, altura).
+    #     size: Tamanho desejado das imagens (largura, altura).
 
     
     if not os.path.exists(output_dir):
