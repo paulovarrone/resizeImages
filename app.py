@@ -1,8 +1,23 @@
 from PIL import Image, ImageOps
 import os
 
+<<<<<<< HEAD
 def resize_images(input_dir, output_dir, size=(300, 400)):
     # Cria os diretórios se não existirem
+=======
+def resize_images(input_dir, output_dir, size=(300, 300)):
+
+    # Redimensiona todas as imagens de um diretório para o tamanho especificado.
+
+    # Args:
+    #     input_dir (str): Caminho para o diretório com as imagens originais.
+    #     output_dir (str): Caminho para o diretório onde as imagens redimensionadas serão salvas.
+    #     size: Tamanho desejado das imagens (largura, altura).
+
+    
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+>>>>>>> e249a6d7cc624a21412d681a511c368e5e58ac24
     if not os.path.exists(input_dir):
         os.makedirs(input_dir)
         print(f"Pasta de entrada criada: {input_dir}")
